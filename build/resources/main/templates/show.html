@@ -3,6 +3,7 @@
 	<head>
 		<title>MVC Web application</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/app.css" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -30,11 +31,9 @@
 				<span th:text="${person.lastName}"> Smith </span>
 			</div>
 		</div>
-
-		<br />
-
-		<a href="edit?id=10" th:href="@{edit(id=${person.id})}"> Edit </a><br />
-		<a href="delete?id=10" th:href="@{delete(id=${person.id})}"> Delete </a><br />
+		<br/>
+		<a class="block button" href="edit?id=10" th:href="@{edit(id=${person.id})}"> Edit </a>
+		<a class="block button" href="delete?id=10" th:href="@{delete(id=${person.id})}"> Delete </a><br /><br />
 		<a href="list">Show the list</a><br />
 	</body>
 </html>

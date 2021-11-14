@@ -3,17 +3,22 @@
 	<head>
 		<title>MVC Web application</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/app.css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<h1>Edit a record</h1>
 
 		<form action="update" method="post">
-			Name: <input type="text" name="firstname" value="John" th:value="${person.firstName}" /><br />
-			Surname: <input type="text" name="lastname" value="Smith" th:value="${person.lastName}" /><br />
+			<label for="firstname"> First Name: </label>
+			<input class="text-box" type="text" name="firstname" value="John" th:value="${person.firstName}" required /><br />
 
-			<input hidden type="text" name="id" value="10" th:value="${person.id}" /> <br />
-			<input type="submit" />
+			<label for="lastname"> Last Name: </label>
+			<input class="text-box" type="text" name="lastname" value="Smith" th:value="${person.lastName}" required /><br />
+
+			<input hidden type="text" name="id" value="10" th:value="${person.id}" />
+
+			<input class="button" type="submit" />
 		</form>
 		<br />
 		<a href="list"> Show the list </a>

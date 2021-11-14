@@ -3,16 +3,19 @@
 	<head>
 		<title>MVC Web application</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css/app.css" rel="stylesheet" />
 	</head>
 
 	<body>
 		<h1>Create a new record</h1>
 
 		<form action="create" method="post">
-			Name:<input type="text" name="firstname" /><br />
-			Surname:<input type="text" name="lastname" /><br />
-			<br />
-			<input type="submit" />
+			<label for="firstname"> First Name: </label>
+			<input class="text-box" type="text" name="firstname" required/><br />
+
+			<label for="lastname"> Last Name: </label>
+			<input class="text-box" type="text" name="lastname" required/><br />
+			<input class="button" type="submit" />
 		</form>
 		<br />
 		<a href="list">Show the list</a>
