@@ -40,4 +40,16 @@ public class Person {
         return lastName;
     }
 
+
+    /*
+    * Nuovi metodi implementati, utili all'aggiornamento dei campi firstName e lastName.
+    * Vedere endpoint UPDATE per informazioni più specifiche.
+    */
+    public void setFirstName(String firstname) {
+        this.firstName = firstname;
+    }
+
+    public void setLastName(String lastname) {
+        this.lastName = lastname;
+    }
 }
